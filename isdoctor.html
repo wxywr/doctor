@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我是医生</title>
+	<meta name="renderer" content="webkit">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/layui.css"  media="all">
+</head>
+<body>
+	<header class="doctorTeam">
+		<div class="left fl">
+			<img src="img/teem.png" alt="">
+		</div>
+		<div class="right fl"><h2>XX医生团队</h2><p>擅长: 团队擅长疾病诊治擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长擅长</p></div>
+		<div class="manage">管理</div>
+	</header>
+	<div class="alert">
+		<span class="cor"></span>
+		<div class="alert-a"><a href="group.html">管理分组</a></div>
+		<div class="alert-b"><a href="manage.html">管理团队</a></div>
+	</div>
+	<div class="tab">
+		<div class="tabs active">历史咨询</div>
+		<div class="tabs">团队成员</div>
+		<div class="tabs no">患者名录</div>
+	</div>
+	<div class="tab-change">
+		<ul class="history">
+			<li class="h-list">
+				<div class="l fl">
+					<img src="img/sick.png" alt="">
+					<div class="number">3</div>
+				</div>
+				<div class="r fl">
+					<h2>张XX</h2>
+					<div  class="status">有人在吗？我xxxxxxxx难受,症状是xxxxxxx,怎么办？</div>
+					<span class="time">上午12:00</span>
+				</div>
+			</li>
+			<li class="h-list">
+				<div class="l fl">
+					<img src="img/sick.png" alt="">
+					<div class="number">1</div>
+				</div>
+				<div class="r fl">
+					<h2>刘XX</h2>
+					<div  class="status">有人在吗？我xxxxxxxx难受,症状是xxxxxxx,怎么办？</div>
+					<span class="time">下午17:00</span>
+				</div>
+			</li>
+		</ul>
+		<ul class="history hide doctor-list">
+			<li class="h-list">
+				<div class="list-l fl">
+				<img src="img/doctor.png" alt="">
+				</div>
+				<div class="list-r fr">
+					<div class="top">
+						<h2>王医生</h2>
+						<span>主任医师</span>
+						<div class="job"></div>
+					</div>
+					<div class="mid gray">
+						简介: 医生个人简介医生个人简介医生个人简介医生个人简介医生个人简介个人
+					</div>
+					<div class="btm gray">
+						擅长: 医生擅长医生擅长医生擅长医生擅长医生擅长医生擅长
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="list-l fl">
+				<img src="img/doctor.png" alt="">
+				</div>
+				<div class="list-r fr">
+					<div class="top">
+						<h2>赵医生</h2>
+						<span>主治医师</span>
+						<div class="job"></div>
+					</div>
+					<div class="mid gray">
+						简介: 医生个人简介医生个人简介医生个人简介医生个人简介医生个人简介个人
+					</div>
+					<div class="btm gray">
+						擅长: 医生擅长医生擅长医生擅长医生擅长医生擅长医生擅长
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="history hide">
+			<div class="searchs">
+				<input type="text" class="search" name="search" placeholder="检索">
+				<i class="find"></i>
+			</div>
+			<div class="layui-collapse" lay-accordion="">
+			  	<div class="layui-colla-item">
+				    <h2 class="layui-colla-title">未分组<span class="number">50</span></h2>
+				    <div class="layui-colla-content layui-show">
+						<div class="show">
+							<div class="show-z fl">
+								<img src="img/sick.png" alt="">
+							</div>
+							<div class="show-m fl">
+								<h2>赵XX</h2>
+								<div class="born">男 1980.05</div>
+							</div>
+							<div class="show-y fr">
+								<a href="patient.html">
+									<div class="visit">回访</div>
+									<i class="more"></i>
+								</a>
+							</div>
+						</div>
+						<div class="show">
+							<div class="show-z fl">
+								<img src="img/sick.png" alt="">
+							</div>
+							<div class="show-m fl">
+								<h2>孙XX</h2>
+								<div class="born">女 1980.05</div>
+							</div>
+							<div class="show-y fr">
+								<a href="patient.html">
+									<div class="visit">回访</div>
+									<i class="more"></i>
+								</a>
+							</div>
+						</div>
+				    </div>
+				</div>
+				<div class="layui-colla-item">
+				    <h2 class="layui-colla-title">高血压<span class="number">30</span></h2>
+				    <div class="layui-colla-content">
+				      	<div class="show">
+							<div class="show-z fl">
+								<img src="img/sick.png" alt="">
+							</div>
+							<div class="show-m fl">
+								<h2>钱XX</h2>
+								<div class="born">男 1980.05</div>
+							</div>
+							<div class="show-y fr">
+								<a href="patient.html">
+									<div class="visit">回访</div>
+									<i class="more"></i>
+								</a>
+							</div>
+						</div>
+				    </div>
+				</div>
+				<div class="layui-colla-item">
+				    <h2 class="layui-colla-title">心脏病<span class="number">10</span></h2>
+				    <div class="layui-colla-content">
+				      	<div class="show">
+							<div class="show-z fl">
+								<img src="img/sick.png" alt="">
+							</div>
+							<div class="show-m fl">
+								<h2>周XX</h2>
+								<div class="born">男 1980.05</div>
+							</div>
+							<div class="show-y fr">
+								<a href="patient.html">
+									<div class="visit">回访</div>
+									<i class="more"></i>
+								</a>
+							</div>
+						</div>
+						<div class="show">
+							<div class="show-z fl">
+								<img src="img/sick.png" alt="">
+							</div>
+							<div class="show-m fl">
+								<h2>王XX</h2>
+								<div class="born">男 1980.05</div>
+							</div>
+							<div class="show-y fr">
+								<a href="patient.html">
+									<div class="visit">回访</div>
+									<i class="more"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/doctor.js"></script>
+<script src="js/layui.js" charset="utf-8"></script>
+<script src="js/layui.js" charset="utf-8"></script>
+<script>
+	layui.use(['element', 'layer'], function(){
+	  	var element = layui.element;
+	  	var layer = layui.layer;
+	  
+	  	//监听折叠
+	 	 element.on('collapse(test)', function(data){
+	    	layer.msg('展开状态：'+ data.show);
+	  	});
+	});
+</script>
+</html>

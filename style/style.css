@@ -1,0 +1,869 @@
+body,ul,ol,p,h1,h2,h3,h4,h5,dl,dd,form,input,textarea,
+td,th,button,strong,em,select,video,canvas{margin:0;padding:0;}
+li{list-style:none;}
+table{ border-collapse:collapse;}
+textarea{resize:none;overflow:auto;}
+img{ border:none; vertical-align:middle;max-width: 100%;display: block;}
+em{ font-style:normal;}
+a{ text-decoration:none;}
+input{outline: none;-webkit-tap-highlight-color:rgba(255,255,255,0);}
+a, img {-webkit-touch-callout: none; }
+html, body {-webkit-user-select: none;   user-select: none;}
+body{font-family: "Helvetica Neue", Helvetica, "STHeiTi", sans-serif; overflow-x:hidden; overflow-y:auto;font-size: 0.14rem;}
+html{font-size: 100px;}
+.fl{float:left;}
+.fr{float:right;}
+.head{
+	width: 1rem;
+	height: 1rem;
+	margin: 0.3rem auto;
+	border-radius: 50%;
+	background: url(../img/sick.png) no-repeat;
+	background-size: cover;
+}
+#form_1{
+	width: 90%;
+	margin: 0 auto;
+}
+#form_1 .row{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding: 0.1rem 0;
+	overflow: hidden;
+}
+#form_1 .no{
+	border-bottom: 0;
+	position: relative;
+}
+#form_1 .margin{
+	width: 70%;
+	font-size: 0.16rem;
+}
+#form_1 .row_l{
+	width: 30%;
+	font-size: 0.14rem;
+	font-weight: bold;
+}
+#form_1 .username,.iphone,.site{
+	width: 90%;
+	border: 0;
+	background-color: #fff;
+}
+#form_1 .male{
+	position: absolute;
+	left: 0;
+	top: 0.02rem;
+	z-index: 10;
+	opacity: 0;
+}
+#form_1 .female{
+	position: absolute;
+	left: 35%;
+	top: 0.02rem;
+	z-index: 10;
+	opacity: 0;
+}
+#form_1 textarea{
+	outline: none;
+	background-color: #EFEFEF;
+	border: 1px solid #ccc;
+	margin: 0.2rem 0 0.1rem;
+	width: 99%;
+	font-size: 0.16rem;
+	font-family: '微软雅黑';
+}
+#form_1 .word{
+	color: #979797;
+	font-size: 0.14rem;
+	position: absolute;
+	right: 0.1rem;
+	bottom: 0.35rem;
+}
+#form_1 .keep{
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background-color: #3478F3;
+	color: #fff;
+	outline: none;
+	border: 0;
+	font-size: 0.18rem;
+	text-align: center;
+}
+#form_1 .row i{
+	width: 0.2rem;
+	height: 0.2rem;
+	display: inline-block;
+	
+	position: absolute;
+	z-index: 5;
+}
+#form_1 .rela{
+	position: relative;
+}
+#form_1 .row i.r-man{
+	left: 0;
+	background: url(../img/woman.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#form_1 .row i.r-woman{
+	left: 35%;
+	background: url(../img/woman.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#form_1 .row label.boy{
+	position: absolute;
+	left: 5%;
+}
+#form_1 .row label.girl{
+	position: absolute;
+	left: 40%;
+}
+#form_1 .row input[name='sex']:checked+i{
+	background: url(../img/check.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+} 
+/*分组管理*/
+.tit{
+	color: #3478F3;
+	font-size: 0.18rem;
+	width: 95%;
+	margin-left: 5%;
+	border-bottom: 1px solid #ccc;
+	height: 0.45rem;
+	line-height: 0.45rem;
+}
+.tit i{
+	display: inline-block;
+	width: 0.23rem;
+	height: 0.23rem;
+	background: url(../img/add.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	vertical-align: -0.05rem;
+	margin-right: 0.1rem;
+}
+.divide{
+	width: 95%;
+	margin-left: 5%;
+}
+.divide li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+.divide li .divide-l{
+	margin-left: 5%;
+	color: #333;
+	font-size: 0.16rem;
+}
+.divide li .divide-r{
+	margin-right: 5%;
+}
+.divide li .divide-r span{
+	font-size: 0.14rem;
+	display: inline-block;
+}
+.divide li .divide-r .edit{
+	color: #0097E0;
+	margin-right: 0.15rem;
+}
+.divide li .divide-r .del{
+	color: #DD0010;
+}
+/*我的医生*/
+.doctorTeam{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 3px solid #ccc;
+	position: relative;
+}
+.doctorTeam .left{
+	width: 30%;
+}
+.doctorTeam .left img{
+	width: 80%;
+	display: block;
+	margin: 0.1rem auto;
+}
+.doctorTeam .right{
+	width: 70%;
+}
+.doctorTeam .right h2{
+	font-size: 0.2rem;
+	font-weight: bold;
+	margin: 0.2rem 0 0.05rem;
+}
+.doctorTeam .right p{
+	color: #808080;
+	font-size: 0.14rem;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+	width: 90%;
+}
+.toggle{
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-top: 6px solid #333;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+.togg{
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-bottom: 6px solid #333;
+	position: absolute;
+	right: 5%;
+	bottom: 12%;
+}
+.doctor-list{
+	width: 100%;
+	display: none;
+}
+.doctor-list li{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.doctor-list .list-l{
+	width: 30%;
+}
+.doctor-list .list-r{
+	width: 70%;
+}
+.doctor-list .list-l img{
+	width: 80%;
+	display: block;
+	margin: 0.15rem auto 0;
+}
+.doctor-list .list-r .top{
+	margin: 0.15rem 0 0.1rem;
+	position: relative;
+}
+.doctor-list .list-r .top h2{
+	display: inline-block;
+	margin-right: 0.1rem;
+	font-size: 0.2rem;
+	font-weight: bold;
+}
+.doctor-list .list-r .top span{
+	display: inline-block;
+	color: #008837;
+	font-size: 0.14rem;
+}
+.doctor-list .list-r .gray{
+	color: #808080;
+	width: 90%;
+}
+.doctor-list .list-r .mid{
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+}
+.doctor-list .list-r .btm{
+	margin: 0.1rem 0;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.doctor-list .job{
+	width: 0.6rem;
+	height: 0.22rem;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+	position: absolute;
+	right: 5%;
+	top: 0;
+}
+/*我是医生*/
+.doctorTeam .manage{
+	display: inline-block;
+	color: #fff;
+	background-color: #3478F3;
+	padding: 0.02rem 0.1rem;
+	border-radius: 0.05rem;
+	position: absolute;
+	right: 5%;
+	top: 0.2rem;
+	font-size: 0.14rem;
+}
+.tab{
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	margin-top: 0.06rem;
+}
+.tab .tabs{
+	border-right: 1px solid #ccc;
+	color: #595757;
+	font-size: 0.18rem;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	text-align: center;
+}
+.tab .active{
+	color: #0096DF;
+}
+.tab .no{
+	border-right: 0;
+}
+.history{
+	width: 100%;
+}
+.history li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.history .l{
+	width: 30%;
+	position: relative;
+}
+.history .r{
+	width: 70%;
+	position: relative;
+}
+.history .l img{
+	width: 80%;
+    display: block;
+    margin: 0.15rem auto 0.1rem;
+}
+.history .r h2{
+	margin: 0.2rem 0 0.1rem;
+	font-size: 0.2rem;
+	font-weight: bold;
+}
+.history .r .status{
+	font-size: 0.16rem;
+	color: #808080;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+}
+.history .r .time{
+	position: absolute;
+	right: 5%;
+	top: 0.25rem;
+	font-size: 0.14rem;
+	color: #808080;
+}
+.history .l .number{
+	background-color: #DD0011;
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+	color: #fff;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	right: 0.1rem;
+	top: 0.2rem;
+}
+.alert{
+	background-color: rgba(0,0,0,0.8);
+	display: inline-block;
+	opacity: 0.9;
+	border-radius: 0.08rem;
+	position: absolute;
+	right: 5%;
+	top: 0.6rem;
+	z-index: 1000;
+	display: none;
+}
+.alert div{
+	color: #fff;
+	font-size: 0.16rem;
+	text-align: center;
+	padding: 0.1rem 0.35rem;
+}	
+.alert a{
+	color: #fff;
+}
+.alert .alert-a{
+	border-bottom: 1px solid #fff;
+}
+.alert .cor{
+	width: 0;
+	height: 0;
+	border: 0.1rem solid transparent;
+	border-bottom: 0.1rem solid #000;
+	position: absolute;
+	right: 8%;
+	top: -0.2rem;
+}
+.tab-change .hide{
+	display: none;
+}
+.history .searchs{
+	width: 90%;
+	margin: 0.15rem auto;
+	position: relative;
+}
+.history .search{
+	display: block;
+	width: 100%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	border: 1px solid #ccc;
+	background-color: #EFEFEF;
+	border-radius: 0.2rem;
+	text-align: center;
+	font-size: 0.16rem;
+}
+.history .searchs .find{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background: url(../img/search.png) no-repeat;
+	position: absolute;
+	left: 40%;
+	top: 0.05rem;
+	background-size: 100%;
+	background-position: center;
+}
+.tab-change .sick-list{
+	overflow: hidden;
+	padding: 0.1rem 5%;
+}
+.tab-change .sick-list .fl{
+	font-size: 0.18rem;
+	color: #333;
+	width: 50%;
+}
+.tab-change .sick-list .fr{
+	font-size: 0.18rem;
+	color: #808080;
+	width: 50%;
+	text-align: right;
+}
+.tab-change .sick-list .trigo{
+	width: 0;
+	height: 0;
+	border: 0.07rem solid transparent;
+	border-bottom: 0.08rem solid #333;
+	display: inline-block;
+	margin-right: 0.1rem;
+	vertical-align: top;
+}
+.show{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding: 0.1rem 0;
+}
+.show .show-z{
+	width: 20%;
+}
+.show .show-m{
+	width: 50%;
+	padding-left: 5%;
+}
+.show .show-y{
+	width: 25%;
+	position: relative;
+}
+.show .show-m h2{
+	margin: 0.1rem 0 0.05rem 0;
+	font-size: 0.2rem;
+	font-weight: bold;
+}
+.show .show-m .born{
+	color: #333;
+	font-size: 0.16rem;
+}
+.show .show-y .visit{
+	display: inline-block;
+	background-color: #3478F3;
+	color: #fff;
+	font-size: 0.14rem;
+	width: 0.45rem;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	text-align: center;
+	border-radius: 0.04rem;
+	margin-top: 30%;
+}
+.show .show-y .more{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: url(../img/icon.png) no-repeat;
+	background-size: 350%;
+	background-position: 0.05rem -1.32rem;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.layui-colla-item .number{
+	color: #808080;
+	font-size: 0.18rem;
+	float: right;
+}
+
+/*----------回访---------*/
+.info{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.info img{
+	width: 25%;
+	height: 0.96rem;
+	display: block;
+	margin: 0.25rem auto 0.06rem;
+}
+.info h4,.sex{
+	text-align: center;
+}
+.info .sex{
+	font-size: 0.16rem;
+	color: #333;
+	margin-top: 0.05rem;
+}
+.info p{
+	width: 85%;
+	margin: 0.1rem auto;
+	color: #333;
+	font-size: 0.16rem;
+}
+.split{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	margin-top: 0.03rem;
+}
+.split .title{
+	font-size: 0.18rem;
+	color: #333;
+	margin: 0.06rem 0 0.15rem 5%;
+}
+.split ul{
+	width: 95%;
+	margin-left: 5%;
+	overflow: hidden;
+	padding-bottom: 0.05rem;
+}
+.split li{
+	width: 21%;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	background-color: #C1C1C1;
+	color: #595757;
+	font-size: 0.16rem;
+	text-align: center;
+	float: left;
+	margin-right: 4%;
+	margin-bottom: 0.1rem;
+	border-radius: 0.15rem;
+}
+.split li.on{
+	background-color: #20A337;
+	color: #fff;
+}
+.split li.add{
+	background-color: #333;
+}
+.split li.add img{
+	width: 28%;
+	height: 0.2rem;
+	display: block;
+	margin: 0.05rem auto;
+}
+.picture{
+	border-top: 1px solid #ccc;
+	margin-top: 0.03rem;
+	padding-left: 5%;
+}
+.picture .title{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	font-size: 0.18rem;
+	color: #333;
+	padding: 0.1rem 0;
+}
+.picture .date{
+	font-size: 0.18rem;
+	color: #333;
+	margin: 0.08rem 0;
+}
+.picture .pic-list{
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.picture .imgs{
+	float: left;
+	width: 31%;
+	height: 0.7rem;
+	background-color: #333;
+	margin-right: 2%;
+	margin-bottom: 0.08rem;
+}
+.fixed{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background-color: #20A337;
+	color: #fff;
+	font-size: 0.2rem;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+/*管理团队*/
+.Head{
+	width: 90%;
+	margin: 0 auto 0.1rem;
+}
+.Head img{
+	width: 26%;
+	height: 0.9rem;
+	display: block;
+	margin: 0.3rem auto;
+}
+.Head .team-name{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.Head h3{
+	font-size: 0.16rem;
+	margin: 0.1rem 0;
+}
+.Head .team-name input{
+	width: 67%;
+	height: 0.3rem;
+	border: 0;
+	font-size: 0.16rem;
+	margin-bottom: 0;
+}
+.Head .sign{
+	position: relative;
+}
+.Head .sign .txt{
+	width: 100%;
+	outline: none;
+	font-family: '微软雅黑';
+	background-color: #EFEFEF;
+	font-size: 0.14rem;
+	margin-bottom: 0.05rem;
+}
+.Head .sign .word{
+	position: absolute;
+	right: 2%;
+	bottom: 5%;
+	color: #808080;
+	font-size: 0.14rem;
+}
+.Head .hold{
+	display: block;
+	border: 0;
+	width: 40%;
+	height: 0.35rem;
+	text-align: center;
+	background-color: #D4D4D4;
+	color: #fff;
+	font-size: 0.16rem;
+	margin: 0 auto;
+	border-radius: 0.1rem;
+}
+.allDoctors .Title{
+	width: 100%;
+	color: #808080;
+	font-size: 0.14rem;
+	background-color: #D4D4D4;
+	text-indent: 5%;
+	padding: 0.02rem 0;
+}
+.allDoctors .Add{
+	color: #3478F3;
+    font-size: 0.16rem;
+    width: 95%;
+    margin-left: 5%;
+    border-bottom: 1px solid #ccc;
+    height: 0.35rem;
+    line-height: 0.35rem;
+}
+.allDoctors .Add .ad{
+	display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url(../img/add.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    vertical-align: -0.05rem;
+    margin-right: 0.1rem;
+}
+.allList{
+	width: 95%;
+	margin-left: 5%;
+}
+.allList .every{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.allList .every .list-l {
+    width: 20%;
+    font-size: 0.14rem;
+}
+.allList .every .list-r {
+    width: 80%;
+}
+.allList .list-l .hd{
+    width: 80%;
+    display: block;
+    margin: 0.1rem 0;
+}
+.allList .list-r h2 {
+    display: inline-block;
+    margin-right: 0.1rem;
+    font-size: 0.18rem;
+    font-weight: bold;
+}
+.allList .list-r .top {
+    margin: 0.15rem 0 0.05rem;
+    position: relative;
+}
+.allList .list-r .top span {
+    display: inline-block;
+    color: #008837;
+    font-size: 0.14rem;
+}
+.allList .list-r .mid {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.allList .list-r .gray {
+    color: #808080;
+    width: 95%;
+    font-size: 0.14rem;
+}
+.allList .list-r .btm {
+	margin: 0.05rem 0 0.1rem ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.allList .job {
+    width: 0.6rem;
+    height: 0.22rem;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0 -0.22rem;
+    background-size: 100%;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+.allList .list-l .edits{
+	color: #0096E0;
+}
+.allList .list-l .dele{
+	color: #DC0010;
+	margin-top: 0.02rem;
+}
+.allList .list-l i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: red;
+	vertical-align: top;
+	margin-right: 0.05rem;
+	background: url(../img/icon.png) no-repeat;
+	background-size: 400%;
+}
+.allList .list-l .edits i{
+	background-position: 0 -0.55rem;
+}
+.allList .list-l .dele i{
+	background-position: 0 -0.74rem;
+}
+
+/*添加团队医生*/
+.new{
+	width: 90%;
+	margin: 0.1rem auto;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.new .left{
+	width: 20%;
+	float: left;
+}
+.new .right{
+	width: 80%;
+	float: right;
+}
+.new .left img{
+	width: 80%;
+}
+.new .right .do-name{
+	width: 30%;
+	font-size: 0.14rem;
+	height: 0.2rem;
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 0;
+}
+.new .right select{
+	width: 30%;
+	background-color: #D4D4D4;
+	margin-left: 2%;
+	height: 0.35rem;
+	border: 1px solid #808080;
+	padding: 0 0 0 0.1rem;
+	font-size: 0.16rem;
+	text-align: center;
+	color: #808080;
+}
+.new .right .mi{
+	font-size: 0.16rem;
+	color: #808080;
+	overflow: hidden;
+}
+.new .right p{
+	float: left;
+}
+.new .right textarea{
+	width: 84%;
+	float: right;
+	background-color: #EFEFEF;
+}
+.new .right .bo{
+	font-size: 0.16rem;
+	color: #808080;
+	overflow: hidden;
+}
+.new .ok{
+	width: 0.55rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	float: right;
+	background-color: #3478F3;
+	color: #fff;
+	font-size: 0.14rem;
+	text-align: center;
+	clear: both;
+	border-radius: 0.06rem;
+	margin-bottom: 0.1rem;
+}

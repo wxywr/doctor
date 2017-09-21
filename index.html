@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/lCalendar.css">
+</head>
+<body>
+	<header>
+		<div class="head"></div>
+	</header>
+	<form action="" id="form_1">
+		<div class="row">
+			<p class="fl row_l">姓名</p> 
+			<p class="fl margin"><input type="text" class="username"></p>
+			</div>
+		<div class="row">
+			<p class="fl row_l">性别</p> 
+			<p class="fl margin rela"><input type="radio" id="man" name="sex" class="male"><i class="r-man"></i><label for="man" class="boy">&nbsp;&nbsp;&nbsp;男</label>
+			<input type="radio" id="woman" name="sex" class="female"><i class="r-woman"></i><label for="woman" class="girl">&nbsp;&nbsp;&nbsp;女</label></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">出生年月</p>
+			<p class="fl margin"><input id="demo1" class="xuan" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" /></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">手机号码</p>
+			<p class="fl margin"><input type="tel" name="phone" class="iphone"></p>
+		</div>
+		<div class="row">
+			<p class="fl row_l">家庭住址</p>
+			<p class="fl margin"><input type="text" class="site"></p>
+		</div>
+		<div class="row no">
+			<p class="row_l">历史病情描述</p> 
+			<textarea name="ill" rows="10" maxlength="200"></textarea>
+			<span class="word">200字</span>
+		</div>
+		<input type="button" value="保存" class="keep">
+	</form>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/doctor.js"></script>
+<script src="js/lCalendar.js"></script>
+<script>
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#demo1',
+		'type': 'date'
+	});
+</script>
+</html>
