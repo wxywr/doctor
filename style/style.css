@@ -128,6 +128,20 @@ html{font-size: 100px;}
 	background-size: cover;
 	background-position: center;
 } 
+.warn{
+    width: 38%;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    text-align: center;
+    font-size: 0.16rem;
+    padding: 0.05rem 0.12rem;
+    margin: 0.2rem auto;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    display: none;
+}
+
 /*分组管理*/
 .tit{
 	color: #3478F3;
