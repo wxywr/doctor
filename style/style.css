@@ -129,7 +129,7 @@ html{font-size: 100px;}
 	background-position: center;
 } 
 .warn{
-    width: 38%;
+	width: 38%;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
     text-align: center;
@@ -138,10 +138,9 @@ html{font-size: 100px;}
     margin: 0.2rem auto;
     position: absolute;
     top: 75%;
-    left: 25%;
+   	left: 25%;
     display: none;
 }
-
 /*分组管理*/
 .tit{
 	color: #3478F3;
@@ -816,8 +815,8 @@ html{font-size: 100px;}
 
 /*添加团队医生*/
 .new{
-	width: 90%;
-	margin: 0.1rem auto;
+	width: 95%;
+	margin: 0.1rem 5% 0 0;
 	overflow: hidden;
 	border-bottom: 1px solid #ccc;
 }
@@ -830,7 +829,7 @@ html{font-size: 100px;}
 	float: right;
 }
 .new .left img{
-	width: 80%;
+	width: 85%;
 }
 .new .right .do-name{
 	width: 30%;
@@ -842,7 +841,7 @@ html{font-size: 100px;}
 .new .right select{
 	width: 30%;
 	background-color: #D4D4D4;
-	margin-left: 2%;
+	margin-left: 5%;
 	height: 0.35rem;
 	border: 1px solid #808080;
 	padding: 0 0 0 0.1rem;
