@@ -267,7 +267,7 @@ html{font-size: 100px;}
 .doctor-list .list-r .top h2{
 	display: inline-block;
 	margin-right: 0.1rem;
-	font-size: 0.2rem;
+	font-size: 0.18rem;
 	font-weight: bold;
 }
 .doctor-list .list-r .top span{
@@ -360,7 +360,7 @@ html{font-size: 100px;}
 }
 .history .r h2{
 	margin: 0.2rem 0 0.1rem;
-	font-size: 0.2rem;
+	font-size: 0.18rem;
 	font-weight: bold;
 }
 .history .r .status{
@@ -497,8 +497,9 @@ html{font-size: 100px;}
 }
 .show .show-m h2{
 	margin: 0.1rem 0 0.05rem 0;
-	font-size: 0.2rem;
+	font-size: 0.18rem;
 	font-weight: bold;
+	color: #333;
 }
 .show .show-m .born{
 	color: #333;
