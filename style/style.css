@@ -129,16 +129,17 @@ html{font-size: 100px;}
 	background-position: center;
 } 
 .warn{
-	width: 38%;
+    width: 38%;
+    height: 0.3rem;
+    line-height: 0.3rem;
     background-color: rgba(0,0,0,0.6);
     color: #fff;
     text-align: center;
-    font-size: 0.16rem;
-    padding: 0.05rem 0.12rem;
-    margin: 0.2rem auto;
+    font-size: 0.14rem;
     position: absolute;
-    top: 75%;
-   	left: 25%;
+    top: 80%;
+    left: 50%;
+    margin-left: -19%;
     display: none;
 }
 /*分组管理*/
