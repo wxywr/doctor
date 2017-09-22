@@ -68,9 +68,10 @@ html{font-size: 100px;}
 	background-color: #EFEFEF;
 	border: 1px solid #ccc;
 	margin: 0.1rem 0;
-	width: 99%;
+	width: 96%;
 	font-size: 0.16rem;
 	font-family: '微软雅黑';
+	padding: 0.05rem;
 }
 #form_1 .word{
 	color: #979797;
