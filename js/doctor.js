@@ -33,14 +33,18 @@ $(function(){
     }
 
 
-// ---------------------
-    $('.search').focus(function(){
+   // -------搜索框--------------
+     $('.search').focus(function(){
         $(this).attr('placeholder','');
         $('.find').css('display','none');
     })
     $('.search').blur(function(){
-        $(this).attr('placeholder','检索');
-        $('.find').css('display','block');
+        if($(this).val()==''){
+            $(this).attr('placeholder','检索');
+            $('.find').css('display','block');
+        }else{
+            $('.find').css('display','none');
+        }
     })
 
 
