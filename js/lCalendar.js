@@ -1,16 +1,4 @@
-/*
- * lCalendar日期控件
- * 
- * 作者：黄磊
- * 
- * 邮箱：xfhxbb@yeah.net
- * 
- * Copyright 2016
- * 
- * 创建于：2016-01-08
- */
- 
-window.lCalendar = (function() {
+ window.lCalendar = (function() {
 	var MobileCalendar = function() {
 		this.gearDate;
 		this.minY = 1900;
@@ -672,7 +660,7 @@ window.lCalendar = (function() {
 				date_mm = date_mm > 9 ? date_mm : '0' + date_mm;
 				var date_dd = parseInt(Math.round(_self.gearDate.querySelector(".date_dd").getAttribute("val"))) + 1;
 				date_dd = date_dd > 9 ? date_dd : '0' + date_dd;
-				_self.trigger.value = (date_yy % passY + _self.minY) + "-" + date_mm + "-" + date_dd;
+				_self.trigger.value = (date_yy % passY + _self.minY) + " 年 " + date_mm + " 月 " + date_dd;
 				closeMobileCalendar(e);
 			}
 			//日期时间确认
