@@ -78,7 +78,7 @@ $(function(){
   //   // 删除分组
     $(".divide .del").click(function (){
     	var de = $(this).parent().parent();
-		var btnArray = ['否', '是'];
+		var btnArray = ['取消', '删除'];
         mui.confirm('', '确定删除该分组？<br/>所有患者将移至未分组', btnArray, function(e) {
             if (e.index == 1) {
                 de.remove();
