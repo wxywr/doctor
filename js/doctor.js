@@ -33,8 +33,8 @@ $(function(){
     }
 
 
-   // -------搜索框--------------
-     $('.search').focus(function(){
+// ----------搜索框-----------
+    $('.search').focus(function(){
         $(this).attr('placeholder','');
         $('.find').css('display','none');
     })
@@ -56,9 +56,7 @@ $(function(){
             if (e.index == 1) {
                 $('.divide').append('<li><div class="divide-l fl">'+e.value+'</div><div class="divide-r fr"><span class="edit">编辑</span><span class="del">删除</span></div></li>');
                 names.innerText = e.value;
-            } else {
-                return;
-            }
+            } 
         })
     })
 
@@ -68,10 +66,8 @@ $(function(){
 		var btnArray = ['取消','确定'];
 		mui.prompt('编辑分组名称','','',btnArray,function(e){
             if (e.index == 1) {
-               edit.innerText = e.value;
-            } else {
-                return;
-            }
+               edit.html(e.value);
+            } 
         })
     })
 
@@ -82,9 +78,7 @@ $(function(){
         mui.confirm('', '确定删除该分组？<br/>所有患者将移至未分组', btnArray, function(e) {
             if (e.index == 1) {
                 de.remove();
-            } else {
-                return;
-            }
+            } 
         })
     })
 
@@ -97,9 +91,7 @@ $(function(){
             if (e.index == 1) {
                 $('.illness').prepend('<li>'+e.value+'</li>')
                 add.innerText = e.value;
-            } else {
-                return;
-            }
+            } 
         })
     })
 
@@ -119,9 +111,7 @@ $(function(){
         mui.confirm('', '确定删除该医生吗？', btnArray, function(e) {
             if (e.index == 1) {
                 tmp.remove();
-            } else {
-                return;
-            }
+            } 
         })
     })
 
@@ -133,13 +123,14 @@ $(function(){
 
     // 个人信息验证
     $('.keep').click(function(){
-        var name = $('.username').val();
-        var check = $('input[name=sex]:checked').val();
-        var born = $('#demo1').val();
-        var phone = $('.iphone').val();
-        var place = $('.site').val();
-        var ill = $('.ago').val();
-        if(name==''||check==''||born==''||phone==''||place==''||ill==''){
+        // var _url = '';
+        var _name = $('.username').val();
+        var _check = $('input[name=sex]:checked').val();
+        var _born = $('#demo1').val();
+        var _phone = $('.iphone').val();
+        var _place = $('.site').val();
+        var _ill = $('.ago').val();
+        if(_name==''||_check==''||_born==''||_phone==''||_place==''||_ill==''){
             $('.warn').text("请将信息填写完整！");
             $('.warn').fadeIn().delay(1500).fadeOut();
             return false;
@@ -149,6 +140,24 @@ $(function(){
             $('.warn').fadeIn().delay(1500).fadeOut();
             return false;
         }
+        $.ajax({
+            // url:_url,
+            data:{
+                name:_name,
+                check:_check,
+                born:_born,
+                phone:_phone,
+                place:_place,
+                ill:_ill
+            },
+            type: 'POST',
+            dataType: 'json',
+            success: function(msg){
+                if(msg.success){
+
+                }
+            }
+        })
     })
 
 })
