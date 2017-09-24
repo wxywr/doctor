@@ -6,15 +6,24 @@ $(function(){
 
 // ---------------------------
 	$('.toggle').click(function(){
-		$('.doctor-list').slideToggle();
+		// $('.doctor-list').slideToggle();
 		if($(this).attr("class")=="toggle"){
 			$(this).attr("class","togg");
 		}
 		else{
 			$(this).attr("class","toggle");
 		}
+        if($('.doctor-list').css("display")=="none"){
+            $('.doctor-list').css('display','block');
+            $('iframe').css('display','none');
+        }
+        else{
+            $('.doctor-list').css('display','none')
+             $('iframe').css('display','block');
+        }
 	}) 
 
+	
     $('.manage').click(function(){
         $('.alert').toggle();
     })
