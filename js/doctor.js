@@ -95,13 +95,13 @@ $(function(){
         })
     })
 
-    
-    $('.team-name input').blur(function(){
-        $('.Head .hold').css('backgroundColor','#3478F3');
-    })
-    $('.sign .txt').blur(function(){
-        $('.Head .hold').css('backgroundColor','#3478F3');
-    })
+    // 监听输入框值的实时变动      (保存)
+    $('.team-name input').bind('input propertychange', function(){ 
+    　　$('.Head .hold').css('backgroundColor','#3478F3');
+    });
+    $('.sign .txt').bind('input propertychange', function(){ 
+    　　$('.Head .hold').css('backgroundColor','#3478F3');
+    });
 
 
     // 删除医生
