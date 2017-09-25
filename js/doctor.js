@@ -23,7 +23,8 @@ $(function(){
         }
 	}) 
 
-	
+
+
     $('.manage').click(function(){
         $('.alert').toggle();
     })
@@ -104,6 +105,7 @@ $(function(){
         })
     })
 
+    
     // 监听输入框值的实时变动      (保存)
     $('.team-name input').bind('input propertychange', function(){ 
     　　$('.Head .hold').css('backgroundColor','#3478F3');
@@ -115,7 +117,7 @@ $(function(){
 
     // 删除医生
     $(".every .dele").click(function (){
-        var tmp = $('.every');
+        var tmp = $(this).parent().parent();
         var btnArray = ['否', '是'];
         mui.confirm('', '确定删除该医生吗？', btnArray, function(e) {
             if (e.index == 1) {
@@ -129,6 +131,17 @@ $(function(){
         $('.allList').prepend('<div class="new"><div class="left"><img src="img/doctor.png" alt=""></div><div class="right"><div class="to"><input type="text" placeholder="姓名" class="do-name"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id="" rows="3"></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id="" rows="3"></textarea></div></div><div class="ok">保存</div></div>');
     })
 
+
+    // 编辑医生信息
+    $(".every .edits").click(function(){
+        $(this).parent().parent().replaceWith('<div class="new"><div class="left"><img src="img/doctor.png" alt=""></div><div class="right"><div class="to"><input type="text" value="" class="do-name names"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id="sim" rows="3"></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id="great" rows="3"></textarea></div></div><div class="ok">保存</div></div>');
+        var h = $(this).parent().next().find('h2').text();
+        $('.names').val(h);
+        var j = $(this).parent().next().find('.simple').text();
+        $('#sim').val(j);
+        var s = $(this).parent().next().find('.goodAt').text();
+        $('#great').val(s);
+    })
 
     // 个人信息验证
     $('.keep').click(function(){
