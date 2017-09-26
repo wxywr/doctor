@@ -145,6 +145,18 @@ $(function(){
     })
 
 
+// 保存修改信息
+    $('.ok').click(function(){
+        $(this).prev().children().find('input').css('border','0');
+        $(this).prev().children().find('select').css({'backgroundColor':'#fff','color': '#008837','paddingLeft':'0'});
+        $(this).prev().children().find('.team-job').css({'color':'#fff','background':'linear-gradient(to left, #a8e063, #56ab2f)','width':'28%','height':'0.25rem','lineHeight':'0.25rem','borderRadius':'0.15rem','width':'28%','paddingLeft':'0.1rem'});
+        $(this).prev().children().find('textarea').css({'backgroundColor':'#fff','border':'none','height':'auto'});
+        $(this).css('display','none');
+        $(this).prev().find('.mask').css('display','block');
+        $(this).siblings('.left').children('.edits').css('display','block');
+        $(this).siblings('.left').children('.dele').css('display','block');
+
+    })
 
 
     // 个人信息验证
