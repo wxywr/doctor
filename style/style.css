@@ -804,6 +804,8 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	padding-left: 0.1rem;
 	border-radius: 0.15rem;
 	width: 28%;
+	height: 0.2rem;
+	line-height: 0.2rem;
 }
 
 .allList .every .right .mi{
