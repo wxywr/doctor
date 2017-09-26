@@ -142,7 +142,7 @@ $(function(){
         $(this).parent().next().children().find('input').css('borderBottom','1px solid #ccc');
         $(this).parent().next().children().find('select').css({'backgroundColor':'#D4D4D4','height':'0.35rem','paddingLeft':'0.1rem','color':'#808080'});
         $(this).parent().next().children().find('textarea').css({'backgroundColor':'#EFEFEF','border':'1px solid #ccc','height':'1rem'});
-        $(this).parent().next().children().find('.team-job').css({'background':'#D4D4D4','color':'#808080','borderRadius':'0','width':'30%'});
+        $(this).parent().next().children().find('.team-job').css({'background':'#D4D4D4','color':'#808080','borderRadius':'0.03rem','width':'30%'});
     })
 
 
