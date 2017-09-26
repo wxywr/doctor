@@ -874,12 +874,12 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 .new .left .edits{
 	color: #0096E0;
 	font-size: 0.14rem;
-	margin-top: 0.1rem;
+	margin-top: 0.25rem;
 	display: none;
 }
 .new .left .dele{
 	color: #DC0010;
-	margin-top: 0.02rem;
+	margin-top: 0.1rem;
 	font-size: 0.14rem;
 	display: none;
 }
