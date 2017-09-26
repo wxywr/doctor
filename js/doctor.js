@@ -6,7 +6,6 @@ $(function(){
 
 // ---------------------------
 	$('.toggle').click(function(){
-		// $('.doctor-list').slideToggle();
 		if($(this).attr("class")=="toggle"){
 			$(this).attr("class","togg");
 		}
@@ -127,21 +126,26 @@ $(function(){
     })
 
 
-    $('.Add').click(function(){
+// 添加团队医生
+    $('.Add i').click(function(){
         $('.allList').prepend('<div class="new"><div class="left"><img src="img/doctor.png" alt=""></div><div class="right"><div class="to"><input type="text" placeholder="姓名" class="do-name"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id="" rows="3"></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id="" rows="3"></textarea></div></div><div class="ok">保存</div></div>');
     })
 
 
-    // 编辑医生信息
-    $(".every .edits").click(function(){
-        $(this).parent().parent().replaceWith('<div class="new"><div class="left"><img src="img/doctor.png" alt=""></div><div class="right"><div class="to"><input type="text" value="" class="do-name names"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id="sim" rows="3"></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id="great" rows="3"></textarea></div></div><div class="ok">保存</div></div>');
-        var h = $(this).parent().next().find('h2').text();
-        $('.names').val(h);
-        var j = $(this).parent().next().find('.simple').text();
-        $('#sim').val(j);
-        var s = $(this).parent().next().find('.goodAt').text();
-        $('#great').val(s);
+// 编辑医生信息
+    $('.every .edits').click(function(){
+        $(this).parent().next().find('.mask').css('display','none');
+        $(this).css('display','none');
+        $(this).next().css('display','none');
+        $(this).parent().siblings('.ok').css('display','block');
+        $(this).parent().next().children().find('input').css('borderBottom','1px solid #ccc');
+        $(this).parent().next().children().find('select').css({'backgroundColor':'#D4D4D4','height':'0.35rem','paddingLeft':'0.1rem','color':'#808080'});
+        $(this).parent().next().children().find('textarea').css({'backgroundColor':'#EFEFEF','border':'1px solid #ccc','height':'1rem'});
+        $(this).parent().next().children().find('.team-job').css({'background':'#D4D4D4','color':'#808080','borderRadius':'0'});
     })
+
+
+
 
     // 个人信息验证
     $('.keep').click(function(){
@@ -180,6 +184,20 @@ $(function(){
                 }
             }
         })
+    })
+
+
+    //跳转到聊天界面
+    $('.visit').click(function(){
+        location.href='https://www.baidu.com/';
+    })
+
+    $('.tab-change .href').click(function(){
+        location.href='https://www.baidu.com/';
+    })
+
+    $('.fixed').click(function(){
+        location.href='https://www.baidu.com/';
     })
 
 })
