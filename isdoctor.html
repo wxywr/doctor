@@ -109,10 +109,8 @@
 								<div class="born">男 1980.05</div>
 							</div>
 							<div class="show-y fr">
-								<a href="patient.html">
-									<div class="visit">回访</div>
-									<i class="more"></i>
-								</a>
+								<div class="visit">回访</div>
+								<a href="patient.html"><i class="more"></i></a>
 							</div>
 						</div>
 						<div class="show">
@@ -124,10 +122,8 @@
 								<div class="born">女 1980.05</div>
 							</div>
 							<div class="show-y fr">
-								<a href="patient.html">
-									<div class="visit">回访</div>
-									<i class="more"></i>
-								</a>
+								<div class="visit">回访</div>
+								<a href="patient.html"><i class="more"></i></a>
 							</div>
 						</div>
 				    </div>
@@ -144,10 +140,8 @@
 								<div class="born">男 1980.05</div>
 							</div>
 							<div class="show-y fr">
-								<a href="patient.html">
-									<div class="visit">回访</div>
-									<i class="more"></i>
-								</a>
+								<div class="visit">回访</div>
+								<a href="patient.html"><i class="more"></i></a>
 							</div>
 						</div>
 				    </div>
@@ -164,10 +158,8 @@
 								<div class="born">男 1980.05</div>
 							</div>
 							<div class="show-y fr">
-								<a href="patient.html">
-									<div class="visit">回访</div>
-									<i class="more"></i>
-								</a>
+								<div class="visit">回访</div>
+								<a href="patient.html"><i class="more"></i></a>
 							</div>
 						</div>
 						<div class="show">
@@ -179,10 +171,8 @@
 								<div class="born">男 1980.05</div>
 							</div>
 							<div class="show-y fr">
-								<a href="patient.html">
-									<div class="visit">回访</div>
-									<i class="more"></i>
-								</a>
+								<div class="visit">回访</div>
+								<a href="patient.html"><i class="more"></i></a>
 							</div>
 						</div>
 					</div>
@@ -194,14 +184,14 @@
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/doctor.js"></script>
 <script src="js/layui.js" charset="utf-8"></script>
-<script src="js/layui.js" charset="utf-8"></script>
 <script>
 	layui.use(['element', 'layer'], function(){
 	  	var element = layui.element;
 	  	var layer = layui.layer;
 	  
 	  	//监听折叠
-	 	 element.on('collapse(test)', function(data){
+	 	element.on('collapse(test)', function(data){
+	 		console.log(data);
 	    	layer.msg('展开状态：'+ data.show);
 	  	});
 	});
