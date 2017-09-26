@@ -756,7 +756,7 @@ html{font-size: 100px;}
 .allList .every .left .edits{
 	color: #0096E0;
 	font-size: 0.14rem;
-	margin-top: 0.1rem;
+	margin-top: 0.05rem;
 }
 .allList .every .left .dele{
 	color: #DC0010;
@@ -867,6 +867,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 .new .right{
 	width: 80%;
 	float: right;
+	position: relative;
 }
 .new .left .hd{
 	width: 85%;
@@ -951,6 +952,15 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	clear: both;
 	border-radius: 0.06rem;
 	margin-bottom: 0.1rem;
+}
+.new .mask{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
 }
 .do-name::-webkit-input-placeholder{
 	color: #8f8f94;
