@@ -868,8 +868,35 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	width: 80%;
 	float: right;
 }
-.new .left img{
+.new .left .hd{
 	width: 85%;
+}
+.new .left .edits{
+	color: #0096E0;
+	font-size: 0.14rem;
+	margin-top: 0.1rem;
+	display: none;
+}
+.new .left .dele{
+	color: #DC0010;
+	margin-top: 0.02rem;
+	font-size: 0.14rem;
+	display: none;
+}
+.new .left i{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	vertical-align: top;
+	margin-right: 0.05rem;
+	background: url(../img/icon.png) no-repeat;
+	background-size: 400%;
+}
+.new .left .edits i{
+	background-position: 0 -0.55rem;
+}
+.new .left .dele i{
+	background-position: 0 -0.74rem;
 }
 .new .right .do-name{
 	width: 30%;
@@ -904,6 +931,8 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	background-color: #EFEFEF;
 	font-size: 0.16rem;
 	color: #808080;
+	padding: 0;
+	height: 1rem;
 }
 .new .right .bo{
 	font-size: 0.16rem;
