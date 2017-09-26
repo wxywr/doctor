@@ -129,7 +129,7 @@ $(function(){
 
 // 添加团队医生
     $('.Add i').click(function(){
-        $('.allList').prepend('<div class="new"><div class="left"><img src="img/doctor.png" alt=""  class="hd"><div class="edits"><i></i>编辑</div><div class="dele" onclick=delet(this)><i></i>删除</div></div><div class="right"><div class="to"><input type="text" placeholder="姓名" class="do-name"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id=""></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id=""></textarea></div></div><div class="ok" onclick=ok()>保存</div></div>');
+        $('.allList').prepend('<div class="new"><div class="left"><img src="img/doctor.png" alt=""  class="hd"><div class="edits"><i></i>编辑</div><div class="dele" onclick=delet(this)><i></i>删除</div></div><div class="right"><div class="to"><input type="text" placeholder="姓名" class="do-name"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id=""></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id=""></textarea></div><div class="mask"></div></div><div class="ok" onclick=ok()>保存</div></div>');
     })
 
 
