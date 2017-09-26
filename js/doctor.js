@@ -154,7 +154,7 @@ $(function(){
         $(this).prev().children().find('textarea').css({'backgroundColor':'#fff','border':'none','height':'auto'});
         $(this).css('display','none');
         $(this).prev().find('.mask').css('display','block');
-        $(this).siblings('.left').children('.edits').css('display','block');
+        $(this).siblings('.left').children('.edits').css({'display':'block','marginTop':'0.1rem'});
         $(this).siblings('.left').children('.dele').css('display','block');
     })
 
