@@ -756,11 +756,11 @@ html{font-size: 100px;}
 .allList .every .left .edits{
 	color: #0096E0;
 	font-size: 0.14rem;
-	margin-top: 0.1rem;
+	margin-top: 0.25rem;
 }
 .allList .every .left .dele{
 	color: #DC0010;
-	margin-top: 0.02rem;
+	margin-top: 0.1rem;
 	font-size: 0.14rem;
 }
 .allList .every .left i{
