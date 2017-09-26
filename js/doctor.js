@@ -126,9 +126,10 @@ $(function(){
     })
 
 
+
 // 添加团队医生
     $('.Add i').click(function(){
-        $('.allList').prepend('<div class="new"><div class="left"><img src="img/doctor.png" alt=""></div><div class="right"><div class="to"><input type="text" placeholder="姓名" class="do-name"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id="" rows="3"></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id="" rows="3"></textarea></div></div><div class="ok">保存</div></div>');
+        $('.allList').prepend('<div class="new"><div class="left"><img src="img/doctor.png" alt=""  class="hd"><div class="edits"><i></i>编辑</div><div class="dele" onclick=delet(this)><i></i>删除</div></div><div class="right"><div class="to"><input type="text" placeholder="姓名" class="do-name"><select class="do-job"><option value="">主任医师</option><option value="">主治医师</option></select><select class="team-job"><option value="">责任医师</option><option value="">团队医师</option></select></div><div class="mi"><p>简介:</p> <textarea name="" id="" rows="3"></textarea></div><div class="bo"><p>擅长:</p> <textarea name="" id="" rows="3"></textarea></div></div><div class="ok" onclick=ok()>保存</div></div>');
     })
 
 
@@ -146,7 +147,7 @@ $(function(){
 
 
 // 保存修改信息
-    $('.ok').click(function(){
+    $('.every .ok').click(function(){
         $(this).prev().children().find('input').css('border','0');
         $(this).prev().children().find('select').css({'backgroundColor':'#fff','color': '#008837','paddingLeft':'0'});
         $(this).prev().children().find('.team-job').css({'color':'#fff','background':'linear-gradient(to left, #a8e063, #56ab2f)','width':'28%','height':'0.25rem','lineHeight':'0.25rem','borderRadius':'0.15rem','width':'28%','paddingLeft':'0.1rem'});
@@ -155,8 +156,8 @@ $(function(){
         $(this).prev().find('.mask').css('display','block');
         $(this).siblings('.left').children('.edits').css('display','block');
         $(this).siblings('.left').children('.dele').css('display','block');
-
     })
+
 
 
     // 个人信息验证
