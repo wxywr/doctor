@@ -733,87 +733,121 @@ html{font-size: 100px;}
 	width: 95%;
 	margin-left: 5%;
 }
+
+/*团队医生列表*/
 .allList .every{
-	border-bottom: 1px solid #ccc;
+	width: 95%;
+	margin: 0.1rem 5% 0 0;
 	overflow: hidden;
+	border-bottom: 1px solid #ccc;
 }
-.allList .every .list-l {
-    width: 20%;
-    font-size: 0.14rem;
+.allList .every .left{
+	width: 20%;
+	float: left;
 }
-.allList .every .list-r {
-    width: 80%;
+.allList .every .right{
+	width: 80%;
+	float: right;
+	position: relative;
 }
-.allList .list-l .hd{
-    width: 80%;
-    display: block;
-    margin: 0.1rem 0;
+.allList .every .left .hd{
+	width: 85%;
 }
-.allList .list-r h2 {
-    display: inline-block;
-    margin-right: 0.1rem;
-    font-size: 0.18rem;
-    font-weight: bold;
-}
-.allList .list-r .top {
-    margin: 0.15rem 0 0.05rem;
-    position: relative;
-}
-.allList .list-r .top span {
-    display: inline-block;
-    color: #008837;
-    font-size: 0.14rem;
-}
-.allList .list-r .mid {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-}
-.allList .list-r .gray {
-    color: #808080;
-    width: 95%;
-    font-size: 0.14rem;
-}
-.allList .list-r .btm {
-	margin: 0.05rem 0 0.1rem ;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.allList .job {
-    width: 0.6rem;
-    height: 0.22rem;
-    background: url(../img/icon.png) no-repeat;
-    background-position: 0 -0.22rem;
-    background-size: 100%;
-    position: absolute;
-    right: 5%;
-    top: 0;
-}
-.allList .list-l .edits{
+.allList .every .left .edits{
 	color: #0096E0;
+	font-size: 0.14rem;
+	margin-top: 0.05rem;
 }
-.allList .list-l .dele{
+.allList .every .left .dele{
 	color: #DC0010;
 	margin-top: 0.02rem;
+	font-size: 0.14rem;
 }
-.allList .list-l i{
+.allList .every .left i{
 	display: inline-block;
 	width: 0.2rem;
 	height: 0.2rem;
-	background-color: red;
 	vertical-align: top;
 	margin-right: 0.05rem;
 	background: url(../img/icon.png) no-repeat;
 	background-size: 400%;
 }
-.allList .list-l .edits i{
+.allList .every .left .edits i{
 	background-position: 0 -0.55rem;
 }
-.allList .list-l .dele i{
+.allList .every .left .dele i{
 	background-position: 0 -0.74rem;
+}
+.allList .every .right .do-name{
+	width: 30%;
+	font-size: 0.18rem;
+	font-weight: bold;
+	height: 0.3rem;
+	border: 0;
+	padding: 0;
+	background-color: #fff;
+}
+.allList .every .right select{
+	width: 30%;
+	background-color: #fff;
+	margin-left: 5%;
+	border: 1px solid #808080;
+	padding: 0;
+	font-size: 0.14rem;
+	text-align: center;
+	color: #008837;
+}
+.allList .every .right .team-job{
+	background: -webkit-linear-gradient(to left, #a8e063, #56ab2f); 
+background: linear-gradient(to left, #a8e063, #56ab2f); 
+	color: #fff;
+	padding-left: 0.1rem;
+	border-radius: 0.15rem;
+}
+
+.allList .every .right .mi{
+	font-size: 0.16rem;
+	color: #808080;
+	overflow: hidden;
+}
+.allList .every .right p{
+	float: left;
+}
+.allList .every .right textarea{
+	width: 84%;
+	float: right;
+	background-color: #fff;
+	font-size: 0.16rem;
+	color: #808080;
+	padding: 0;
+	border: none;
+}
+.allList .every .right .bo{
+	font-size: 0.16rem;
+	color: #808080;
+	overflow: hidden;
+}
+.allList .every .mask{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.allList .every .ok{
+	width: 0.55rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	float: right;
+	background-color: #3478F3;
+	color: #fff;
+	font-size: 0.14rem;
+	text-align: center;
+	clear: both;
+	border-radius: 0.06rem;
+	margin-bottom: 0.1rem;
+	display: none;
 }
 
 /*添加团队医生*/
@@ -849,7 +883,7 @@ html{font-size: 100px;}
 	height: 0.35rem;
 	border: 1px solid #808080;
 	padding: 0 0 0 0.1rem;
-	font-size: 0.16rem;
+	font-size: 0.14rem;
 	text-align: center;
 	color: #808080;
 }
@@ -889,4 +923,7 @@ html{font-size: 100px;}
 .do-name::-webkit-input-placeholder{
 	color: #8f8f94;
 	font-weight: normal;
+}
+.bj{
+	display: none;
 }
