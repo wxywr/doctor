@@ -167,7 +167,7 @@ $(function(){
         $(this).prev().find('.mask').css('display','block');
         $(this).siblings('.left').children('.edits').css({'display':'block'});
         $(this).siblings('.left').children('.dele').css('display','block');
-        $(this).prev().children().find('.sim').css('marginBottom','0');
+        $(this).prev().children().find('.sim').css('marginBottom','0.05rem');
     })
 
 
