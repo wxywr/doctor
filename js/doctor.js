@@ -22,6 +22,17 @@ $(function(){
         }
 	}) 
 
+	
+    $('.doctorTeam .left,.doctorTeam .right').click(function(){
+        if($('.doctor-list').css("display")=="none"){
+            $('.doctor-list').css('display','block');
+            $('iframe').css('display','none');
+        }
+        else{
+            $('.doctor-list').css('display','none')
+            $('iframe').css('display','block');
+        } 
+    })
 
 
     $('.manage').click(function(){
