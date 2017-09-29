@@ -186,7 +186,7 @@ $(function(){
             $('.warn').fadeIn().delay(1500).fadeOut();
             return false;
         }
-        if(!(/^1[34578]\d{9}$/.test(phone))){
+        if(!(/^1[34578]\d{9}$/.test(_phone))){
             $('.warn').text("手机号码填写有误！");
             $('.warn').fadeIn().delay(1500).fadeOut();
             return false;
