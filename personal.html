@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息注册</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/lCalendar.css">
+</head>
+<body style="background-color: #EFEFEF">
+	<div class="info-tit">
+		<a href="javascript:history.go(-1)"></a>个人信息注册
+	</div>
+	<div class="info-id">
+		<p>身份</p>
+		<div class="people">
+			<div class="doc">医生</div><div class="ill">患者</div>
+		</div>
+		<span style="position: absolute;left: 5%;bottom: 0;color: #DE0011;font-size: 0.14rem;display: none;">您必须完整填写表格</span>
+	</div>
+	<div class="info-form">
+		<div class="form-a two">
+			<form action="" id="form_doc">
+				<div class="row">
+					<p class="fl row_l">姓名</p> 
+					<p class="fl margin"><input type="text" class="username err" placeholder="请输入您的真实姓名"></p>
+					</div>
+				<div class="row">
+					<p class="fl row_l">性别</p> 
+					<p class="fl margin rela"><input type="radio" id="man" name="sex" class="male err" checked=""><i class="r-man"></i><label for="man" class="boy">&nbsp;&nbsp;&nbsp;男</label>
+					<input type="radio" id="woman" name="sex" class="female err"><i class="r-woman"></i><label for="woman" class="girl">&nbsp;&nbsp;&nbsp;女</label></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">出生年月</p>
+					<p class="fl margin"><input id="date_a" class="xuan err" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" /></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">手机号码</p>
+					<p class="fl margin"><input type="tel" name="phone" class="iphone err" placeholder="请输入您的手机号码"></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">职称</p>
+					<p class="fl margin"><input type="text" class="Title err" placeholder="请输入您的职称"></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">职位</p>
+					<p class="fl margin"><input type="text" class="position err" placeholder="请输入您的职位"></p>
+				</div>
+				<div class="row no">
+					<p class="row_l">擅长</p> 
+					<div><textarea name="goodAt" rows="6" maxlength="100" class="skill err"></textarea></div>
+					<span class="word">100字</span>
+				</div>
+				<div class="row no">
+					<p class="row_l">个人简介</p> 
+					<div><textarea name="personal" rows="6" maxlength="100" class="simple err"></textarea></div>
+					<span class="word">100字</span>
+				</div>
+				<div class="blank"></div>
+				<div class="agree">
+					同意服务条款
+					<span class="add-item-status swift-btn">
+					    <input type="checkbox" name="" id='checkbox' checked="" />
+					    <label class="" for='checkbox'></label>
+					</span>
+				</div>
+				<p class="noted">轻点"提交",即表示您同意<span>小医机器人服务条款与条件</span>。</p>
+				<input type="button" value="提交" class="keeps">
+			</form>
+		</div>
+		<div class="form-b two">
+			<form action="" id="form_ill">
+				<div class="row">
+					<p class="fl row_l">姓名</p> 
+					<p class="fl margin"><input type="text" class="username err" placeholder="请输入您的真实姓名"></p>
+					</div>
+				<div class="row">
+					<p class="fl row_l">性别</p> 
+					<p class="fl margin rela"><input type="radio" id="man" name="sex" class="male err" checked=""><i class="r-man"></i><label for="man" class="boy">&nbsp;&nbsp;&nbsp;男</label>
+					<input type="radio" id="woman" name="sex" class="female err"><i class="r-woman"></i><label for="woman" class="girl">&nbsp;&nbsp;&nbsp;女</label></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">出生年月</p>
+					<p class="fl margin"><input id="date_b" class="xuan err" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" /></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">手机号码</p>
+					<p class="fl margin"><input type="tel" name="phone" class="iphone err" placeholder="请输入您的手机号码"></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">家庭住址</p>
+					<p class="fl margin"><input type="text" class="site err" placeholder="请输入您的常用居住地址"></p>
+				</div>
+				<div class="row no">
+					<p class="row_l">历史病情描述</p> 
+					<div><textarea name="illness" rows="11" maxlength="200" class="ago err"></textarea></div>
+					<span class="word">200字</span>
+				</div>
+				<div class="blank"></div>
+				<div class="agree">
+					同意服务条款
+					<span class="add-item-status swift-btn">
+					    <input type="checkbox" name="" id='checkbox' checked="" />
+					    <label class="" for='checkbox'></label>
+					</span>
+				</div>
+				<p class="noted">轻点"提交",即表示您同意<span>小医机器人服务条款与条件</span>。</p>
+				<input type="button" value="提交" class="keeps">
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/doctor.js"></script>
+<script src="js/lCalendar.js"></script>
+<script>
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#date_a',
+		'type': 'date'
+	});
+
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#date_b',
+		'type': 'date'
+	});
+</script>
+</html>
