@@ -224,5 +224,86 @@ $(function(){
     $('.fixed').click(function(){
         location.href='https://www.baidu.com/';
     })
+	
+	
+	
+    // 医患身份切换
+   var people = 0;
+    $('.info-id .people div').click(function(){
+        var index = $(this).index();
+        people=index;
+        changes();
+    })
+    function changes(){
+        $('.info-id .people div').eq(people).css({'color':'#FFF','backgroundColor':'#3478F3','border':'1px solid #3478F3','borderRight':'0'}).siblings().css({'color':'#333','backgroundColor':'#FFF','border':'1px solid #ccc'});
+        $('.info-form .two').eq(people).css('display','block').siblings().css('display','none');
+    }
+
+// 医生身份验证
+    $('#form_doc .err').blur(function(){
+        if($(this).val().length<=0){
+            $(this).parent().prev().css("color","#DE0011");
+        }else{
+            $(this).parent().prev().css("color","#333");
+        }
+    })
+
+    $('#form_doc .keeps').click(function(){
+        var _name = $('#form_doc .username').val();
+        var _check = $('#form_doc input[name=sex]:checked').val();
+        var _date = $('#date_a').val();
+        var _phone = $('#form_doc .iphone').val();
+        var _title = $('#form_doc .Title').val();
+        var _position = $('#form_doc .position').val();
+        var _skill = $('#form_doc .skill').val();
+        var _simple = $('#form_doc .simple').val();
+        if(_name==''||_check==''||_date==''||_phone==''||_title==''||_position==''||_skill==''||_simple==''){
+            $('.info-id span').css('display','block');
+            return false;
+        }
+        if(!(/^1[34578]\d{9}$/.test(_phone))){
+            $('#form_doc .iphone').parent().prev().css("color","#DE0011");
+            return false;
+        }
+        else{
+            $('.info-id span').css('display','none');
+            location.href='doctor-submit.html';
+        }
+    })
+
+
+
+// 患者身份验证
+    $('#form_ill .err').blur(function(){
+        if($(this).val().length<=0){
+            $(this).parent().prev().css("color","#DE0011");
+        }else{
+            $(this).parent().prev().css("color","#333");
+        }
+    })
+
+    $('#form_ill .keeps').click(function(){
+        var _name = $('#form_ill .username').val();
+        var _check = $('#form_ill input[name=sex]:checked').val();
+        var _date = $('#date_b').val();
+        var _phone = $('#form_ill .iphone').val();
+        var _site = $('#form_ill .site').val();
+        var _ago = $('#form_ill .ago').val();
+        if(_name==''||_check==''||_date==''||_phone==''||_site==''||_ago==''){
+            $('.info-id span').css('display','block');
+            return false;
+        }
+        if(!(/^1[34578]\d{9}$/.test(_phone))){
+            $('#form_ill .iphone').parent().prev().css("color","#DE0011");
+            return false;
+        }
+        else{
+            $('.info-id span').css('display','none');
+            location.href='patient-submit.html';
+        }
+    })
+
+
+   })
 
 })
