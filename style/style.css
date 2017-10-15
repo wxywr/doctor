@@ -1276,7 +1276,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 }
 .team-name .tit{
     color: #3478F3;
-    font-size: 0.2rem;
+    font-size: 0.18rem;
     width: 95%;
     margin-left: 5%;
     border-bottom: 1px solid #ccc;
@@ -1304,7 +1304,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 .team-name li .divide-l {
     margin-left: 8%;
     color: #333;
-    font-size: 0.18rem;
+    font-size: 0.16rem;
 }
 .team-name li .job-a{
 	color: #22A339;
@@ -1326,7 +1326,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 }
 .team-name .newteam{
 	color: #3478F3;
-    font-size: 0.2rem;
+    font-size: 0.18rem;
     width: 100%;
     padding-left: 5%;
     border: 1px solid #ccc;
