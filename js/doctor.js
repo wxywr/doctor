@@ -18,11 +18,11 @@ $(function(){
         }
         else{
             $('.doctor-list').css('display','none')
-             $('iframe').css('display','block');
+            $('iframe').css('display','block');
         }
 	}) 
 
-	
+
     $('.doctorTeam .left,.doctorTeam .right').click(function(){
         if($('.doctor-list').css("display")=="none"){
             $('.doctor-list').css('display','block');
@@ -33,6 +33,7 @@ $(function(){
             $('iframe').css('display','block');
         } 
     })
+
 
 
     $('.manage').click(function(){
@@ -224,10 +225,9 @@ $(function(){
     $('.fixed').click(function(){
         location.href='https://www.baidu.com/';
     })
-	
-	
-	
-    // 医患身份切换
+
+
+// 医患身份切换
    var people = 0;
     $('.info-id .people div').click(function(){
         var index = $(this).index();
@@ -304,9 +304,7 @@ $(function(){
     })
 
 
-   })
-
-// 创建新团队
+    // 创建新团队
     $('.setup').click(function(){
         var tname = $('.creat .teamName').val();
         var great = $('.creat .great').val();
@@ -314,6 +312,5 @@ $(function(){
             alert('请将新团队信息填写完整！');
         }
     })
-
 
 })
