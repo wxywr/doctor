@@ -1029,6 +1029,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	display: inline-block;
 	width: 0.6rem;
 	height: 0.3rem;
+	line-height: 0.3rem;
 	text-align: center;
 	box-sizing: border-box;
 }
