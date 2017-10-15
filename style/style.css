@@ -1526,3 +1526,6 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
     right: 0.1rem;
     bottom: 0.3rem;
 }
+.font{
+	font-size: 0.18rem;
+}
