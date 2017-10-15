@@ -250,7 +250,7 @@ html{font-size: 100px;}
 	background-size: 75%;
 	background-position: center;
 	position: absolute;
-	right: 4%;
+	right: 5%;
 	top: 0.15rem;
 }
 .doctor-list{
@@ -1073,7 +1073,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 }
 .info-form .row_l{
 	width: 30%;
-	font-size: 0.16rem;
+	font-size: 0.14rem;
 	font-weight: bold;
 }
 .info-form .username,.iphone,.Title,.position{
@@ -1171,7 +1171,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	line-height: 0.5rem;
 	border: 1px solid #ccc;
 	border-width: 1px 0;
-	font-size: 0.16rem;
+	font-size: 0.14rem;
     font-weight: bold;
     padding: 0 5%;
 }
@@ -1498,6 +1498,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	height: 0.3rem;
 	margin-top: 0.1rem;
 	border: 0;
+	font-size: 0.16rem;
 }
 .creat .teamName::-webkit-input-placeholder{
 	color: #ccc;
