@@ -306,4 +306,14 @@ $(function(){
 
    })
 
+// 创建新团队
+    $('.setup').click(function(){
+        var tname = $('.creat .teamName').val();
+        var great = $('.creat .great').val();
+        if(tname==''||great==''){
+            alert('请将新团队信息填写完整！');
+        }
+    })
+
+
 })
