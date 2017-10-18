@@ -323,7 +323,6 @@ $(function(){
     })
     $('#form_doc input').blur(function(){
         $('.hd-code .revise').text("保存");
-        $('.info-form .mask').css('display','block');
     })
 
 })
