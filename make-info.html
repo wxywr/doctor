@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>个人信息注册</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/lCalendar.css">
+</head>
+<body>
+	<div class="hd-code">
+		<a href="javascript:history.go(-1)"></a>个人信息注册
+		<div class="revise">修改</div>
+	</div>
+	<header>
+		<div class="head"></div>
+	</header>
+	<div class="info-form">
+		<div class="form-a two">
+			<form action="" id="form_doc">
+				<div class="row">
+					<p class="fl row_l">姓名</p> 
+					<p class="fl margin"><input type="text" class="username err font" value="汪峰"></p>
+					</div>
+				<div class="row">
+					<p class="fl row_l">性别</p> 
+					<p class="fl margin rela"><input type="radio" id="man" name="sex" class="male err" checked=""><i class="r-man"></i><label for="man" class="boy">&nbsp;&nbsp;&nbsp;男</label>
+					<input type="radio" id="woman" name="sex" class="female err"><i class="r-woman"></i><label for="woman" class="girl">&nbsp;&nbsp;&nbsp;女</label></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">出生年月</p>
+					<p class="fl margin"><input id="date_a" class="xuan err" type="text" readonly="" name="input_date" data-lcalendar="1900-01-1,2017-12-31" style="border: 0;font-size: 0.16rem;" value="1898年05月" /></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">手机号码</p>
+					<p class="fl margin"><input type="tel" name="phone" class="iphone err font" value="15300098767"></p>
+				</div>
+				<div class="row">
+					<p class="fl row_l">职称</p>
+					<p class="fl margin"><input type="text" class="Title err font" value="副主任医师"></p>
+				</div>
+				<div class="row no">
+					<p class="row_l">个人简介</p> 
+					<div><textarea name="personal" rows="6" maxlength="100" class="simple err">肾脏科主任助理,副主任医师,医学博士,硕士生导师</textarea></div>
+					<span class="word">100字</span>
+				</div>
+				<div class="row no" style="margin-bottom: 0.8rem;">
+					<p class="row_l">擅长</p> 
+					<div><textarea name="goodAt" rows="6" maxlength="100" class="skill err">肾小球肾炎、糖尿病、痛风性肾病等常见风湿病诊治</textarea></div>
+					<span class="word">100字</span>
+				</div>
+			</form>
+		</div>
+		<div class="mask"></div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/doctor.js"></script>
+<script src="js/lCalendar.js"></script>
+<script>
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#date_a',
+		'type': 'date'
+	});
+</script>
+</html>
