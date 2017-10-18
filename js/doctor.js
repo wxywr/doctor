@@ -116,14 +116,18 @@ $(function(){
         })
     })
 
-    
-    // 监听输入框值的实时变动      (保存)
-    $('.team-name input').bind('input propertychange', function(){ 
-    　　$('.Head .hold').css('backgroundColor','#3478F3');
-    });
-    $('.sign .txt').bind('input propertychange', function(){ 
-    　　$('.Head .hold').css('backgroundColor','#3478F3');
-    });
+
+    $('.team-name input').focus(function(){
+        $('.Head .hold').css('backgroundColor','#3478F3');
+    })
+    $('.sign .txt').focus(function(){
+        $('.Head .hold').css('backgroundColor','#3478F3');
+    })
+
+
+    $('.every .fr .del').click(function(){
+        $(this).parent().parent().parent().remove();
+    })
 
 
     // 删除医生
@@ -311,6 +315,14 @@ $(function(){
         if(tname==''||great==''){
             alert('请将新团队信息填写完整！');
         }
+    })
+
+    $('.hd-code .revise').click(function(){
+        $('.info-form .mask').css('display','none');
+        $("#form_doc .username").focus();
+    })
+    $('#form_doc input').blur(function(){
+        $('.hd-code .revise').text("保存");
     })
 
 })
