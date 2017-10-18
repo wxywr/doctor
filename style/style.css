@@ -660,12 +660,31 @@ html{font-size: 100px;}
 .Head{
 	width: 90%;
 	margin: 0 auto 0.1rem;
+	position: relative;
 }
 .Head img{
 	width: 26%;
 	height: 0.9rem;
 	display: block;
 	margin: 0.3rem auto;
+}
+.Head .cod{
+	position: absolute;
+	right: 5%;
+	top: 0.25rem;
+}
+.Head .cod i{
+	display: block;
+	width: 0.3rem;
+	height: 0.3rem;
+	background: url(../img/er.png) no-repeat;
+	background-size: cover;
+	margin-left: 30%;
+}
+.Head .cod p{
+	color: #333;
+	font-size: 0.14rem;
+	margin-top: 0.1rem;
 }
 .Head .team-name{
 	border-bottom: 1px solid #ccc;
@@ -703,14 +722,14 @@ html{font-size: 100px;}
 .Head .hold{
 	display: block;
 	border: 0;
-	width: 40%;
+	width: 50%;
 	height: 0.35rem;
 	text-align: center;
 	background-color: #D4D4D4;
 	color: #fff;
 	font-size: 0.16rem;
 	margin: 0 auto;
-	border-radius: 0.1rem;
+	letter-spacing: 0.1rem;
 }
 .allDoctors .Title{
 	width: 100%;
@@ -822,6 +841,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	font-size: 0.16rem;
 	color: #808080;
 	overflow: hidden;
+	margin-top: 0.1rem;
 }
 .allList .every .right p{
 	float: left;
@@ -839,6 +859,20 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	font-size: 0.16rem;
 	color: #808080;
 	overflow: hidden;
+}
+.allList .every .right .to .doc{
+	font-weight: bold;
+	font-size: 0.18rem;
+}
+.allList .every .right .to .del{
+	width: 0.5rem;
+	height: 0.25rem;
+	background: url(../img/del.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 0.03rem;
 }
 .allList .every .mask{
 	width: 100%;
@@ -1047,6 +1081,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 .info-form{
 	width: 100%;
 	background-color: #fff;
+	position: relative;
 }
 .info-form .form-b{
 	display: none;
@@ -1171,7 +1206,7 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 	line-height: 0.5rem;
 	border: 1px solid #ccc;
 	border-width: 1px 0;
-	font-size: 0.14rem;
+	font-size: 0.18rem;
     font-weight: bold;
     padding: 0 5%;
 }
@@ -1530,4 +1565,75 @@ background: linear-gradient(to left, #a8e063, #56ab2f);
 }
 .font{
 	font-size: 0.16rem;
+}
+/*团队二维码*/
+.docTeam{
+	width: 100%;
+	overflow: hidden;
+	margin: 0.35rem 0;
+}
+.docTeam .z{
+	width: 30%;
+}
+.docTeam .y{
+	width: 65%;
+	margin-right: 5%;
+}
+.docTeam .z .img{
+	width: 80%;
+	margin: 0 auto;
+	height: 0.9rem;
+	border-radius: 50%;
+	background: url(../img/teem.png) no-repeat;
+	background-size: cover;
+}
+.docTeam .y .title{
+	font-size: 0.18rem;
+	color: #333;
+	font-weight: bold;
+	margin-top: 0.15rem;
+}
+.docTeam .y p{
+	font-size: 0.16rem;
+	color: #888;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.hd-code{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background-color: #333;
+	color: #fff;
+	font-size: 0.2rem;
+	text-align: center;
+	position: relative;
+}
+.hd-code a{
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.3rem;
+	background: url(../img/back.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 3%;
+	top: 0.05rem;
+}
+.hd-code .revise{
+	color: #3478F3;
+	font-size: 0.16rem;
+	position: absolute;
+	right: 3%;
+	top: 0;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: transparent;
+	z-index: 100;
 }
